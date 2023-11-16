@@ -1,0 +1,159 @@
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+.header-picture {
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.username-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #cdd5e0;
+  font-size: small;
+  padding: 4px;
+  margin-left: 10px;
+  width: 100%;
+  padding-block: 8px;
+}
+
+.username-input::placeholder {
+  color: #cdd5e0;
+}
+
+.search-box {
+  padding-inline: 10px;
+  top: 8px;
+  position: absolute;
+  background-color: #20293a;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.content {
+  width: 80%;
+}
+
+.header-content {
+  display: flex;
+  margin-top: -15px;
+}
+
+.header-tips {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.github-logo {
+  border: 4px solid #20293a;
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-name {
+  font-size: 1rem;
+  color: #cdd5e0;
+  font-weight: 700;
+}
+
+.profile-description {
+  font-size: 0.75rem;
+  color: #cdd5e0;
+}
+
+.repositories {
+  margin-block: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.repositories > * {
+  margin-bottom: 16px;
+}
+
+.all-repos {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 42px;
+  color: #cdd5e0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1300px) {
+  .header-tips > * + * {
+    margin-left: 16px;
+  }
+
+  .header-tips {
+    flex-direction: row;
+  }
+
+  .header-content {
+    margin-top: -55px;
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .username-input {
+    width: 45%;
+    font-size: 1rem;
+    top: 18px;
+    padding: 5px;
+    border-radius: 14px;
+  }
+
+  .github-logo {
+    border: 8px solid #20293a;
+    border-radius: 32px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-description {
+    font-size: 1.25rem;
+  }
+
+  .repositories {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .repositories > * {
+    margin-bottom: 16px;
+  }
+
+  .all-repos {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 42px;
+    color: #cdd5e0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

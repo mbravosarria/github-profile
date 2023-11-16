@@ -1,0 +1,42 @@
+.tip-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #111729;
+  padding-inline: 8px;
+  border-radius: 8px;
+  max-height: 40px;
+  margin-bottom: 8px;
+}
+
+.tip-label {
+  border-right: 1px solid #364153;
+  color: #364153;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-right: 16px;
+  padding-block: 8px;
+}
+
+.tip-value {
+  font-size: small;
+  padding-left: 16px;
+  color: #cdd5e0;
+}
+
+@media screen and (min-width: 890px) {
+  .tip-content {
+    justify-content: center;
+    padding-inline: 18px;
+    border-radius: 14px;
+    max-height: 40px;
+  }
+
+  .tip-label {
+    font-size: 1rem;
+  }
+
+  .tip-value {
+    font-size: 1rem;
+  }
+}

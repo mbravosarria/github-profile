@@ -1,0 +1,62 @@
+.card-content {
+  background-image: linear-gradient(to right, #111729, #1d1b48);
+  padding-inline: 10px;
+  border-radius: 8px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer > * + * {
+  margin-left: 16px;
+}
+
+.secondary-text {
+  color: #4a5567;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.name {
+  color: #cdd5e0;
+  font-size: 1rem;
+}
+
+.last-update {
+  font-size: 0.5rem;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 1300px) {
+  .card-content {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 890px) and (max-width: 1300px) {
+  .card-content {
+    width: 42%;
+    padding-inline: 24px;
+    border-radius: 18px;
+  }
+
+  .secondary-text {
+    color: #4a5567;
+    font-weight: 600;
+  }
+
+  .last-update {
+    font-size: 0.75rem;
+  }
+}
